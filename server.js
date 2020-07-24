@@ -12,14 +12,23 @@ const app = express();
 app.use(cors({origin: true}));
 app.use(bodyParser.json());
 
+// Write your code here
 
 
+
+
+
+
+// This is for production only
 if(process.env.NODE_ENV === "production"){
     const path = require('path');
     app.use(express.static('client/build'));
     app.get('*', (req, res) => res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html')));
 }
 
+
+
+// Initiating the MongoDB conneciton and starting the express server...
 mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true}, (err) => {
     if(!err){
         const {PORT} = process.env;

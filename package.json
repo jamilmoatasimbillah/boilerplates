@@ -1,0 +1,19 @@
+{
+  "name": "mern_boilerplate",
+  "version": "1.0.0",
+  "description": "This is a sample boilerplate for MERN project",
+  "main": "server.js",
+  "scripts": {
+    "install": "npm i --save body-parser cors express mongoose",
+    "install-dev": "npm i --save-dev concurrently dotenv nodemon",
+    "install-client": "npx create-react-app client",
+    "start": "node server.js",
+    "server": "nodemon server.js --ignore client",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix cleint && npm run build --prefix client"
+  },
+  "author": "Md Jamil Moatasimbillah",
+  "license": "ISC"
+  
+}

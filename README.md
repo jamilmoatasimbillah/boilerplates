@@ -11,10 +11,9 @@ You can easily change this behaviour by changing the value of <strong>process.en
 
 # How to run
 
-* For the first time, you need run 3 commands
->npm run install
->npm run install-dev
->npm run install-client
+* For the first time, you need run the following command
+>npm run setup
+
 
 You are ready to start your MERN project now.
 

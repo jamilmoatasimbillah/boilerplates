@@ -4,8 +4,9 @@
   "description": "This is a sample boilerplate for MERN project",
   "main": "server.js",
   "scripts": {
-    "install": "npm i --save body-parser cors express mongoose",
-    "install-dev": "npm i --save-dev concurrently dotenv nodemon",
+    "setup": "npm run install-dep && npm run install-dev-dep && npm run install-client",
+    "install-dep": "npm i --save body-parser cors express mongoose",
+    "install-dev-dep": "npm i --save-dev concurrently dotenv nodemon",
     "install-client": "npx create-react-app client",
     "start": "node server.js",
     "server": "nodemon server.js --ignore client",
@@ -15,5 +16,4 @@
   },
   "author": "Md Jamil Moatasimbillah",
   "license": "ISC"
-  
 }

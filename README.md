@@ -1,6 +1,6 @@
-# Sociopool India Interview
+# MERN boilerplate
 
-The repositiory is designed in a way that it can be deployed on Heroku at any time.
+The boilerplate is designed in a way that it can be deployed on Heroku at any time.
 
 ## Database precautions
 #### According to the settings of the project, the MongoDB server is not hosted on  'MongoDB Atlas Platform'
